@@ -21,200 +21,213 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <RelativeLayout
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/rl_register_main_content"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
-        <android.support.design.widget.TextInputLayout
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/input_name"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="26dp"
-            android:layout_marginRight="26dp"
-            android:textColorHint="@color/colorPrimary">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/et_name"
-                android:hint="Name"
-                android:textColorHint="@color/colorAccent"
-
-                />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/input_phone"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="26dp"
-            android:layout_marginRight="26dp"
-            android:layout_below="@+id/input_name"
-            android:textColorHint="@color/colorPrimary">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/et_phone"
-                android:hint="Phone Number"
-                android:textColorHint="@color/colorAccent"
-
-                />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/input_email"
-            android:layout_below="@id/input_phone"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="26dp"
-            android:layout_marginRight="26dp"
-            android:textColorHint="@color/colorPrimary">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/et_email"
-                android:hint="Email Address"
-                android:textColorHint="@color/colorAccent"
-
-                />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/input_register_password"
-            android:layout_below="@id/input_email"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="26dp"
-            android:layout_marginRight="26dp"
-            android:textColorHint="@color/colorPrimary">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/et_register_password"
-                android:hint="Password"
-                android:textColorHint="@color/colorAccent"
-                android:inputType="textPassword"
-
-                />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/input_confirm_passowrd"
-            android:layout_below="@id/input_register_password"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="26dp"
-            android:layout_marginRight="26dp"
-            android:textColorHint="@color/colorPrimary">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/et_confirm_password"
-                android:hint="Confirm Password"
-                android:textColorHint="@color/colorAccent"
-                android:inputType="textPassword"
-
-                />
-        </android.support.design.widget.TextInputLayout>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/input_confirm_passowrd"
-            android:layout_marginTop="17dp"
-            android:text="@string/lbl_gender"
-            android:textSize="18sp"
-            android:layout_marginLeft="30dp"
-            android:textColor="@color/colorPrimary"/>
-        <RadioGroup
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_below="@id/input_confirm_passowrd"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="100dp"
-            android:id="@+id/rdg_gender"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:id="@+id/rl_register_main_content"
             >
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Male"
-                android:paddingRight="10dp"
-                android:id="@+id/radio_male"
-                />
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Female"
-                android:id="@+id/radio_female"
-                />
-
-
-        </RadioGroup>
-
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/input_address"
-            android:layout_below="@id/rdg_gender"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="26dp"
-            android:layout_marginRight="26dp"
-            android:textColorHint="@color/colorPrimary">
-
-            <EditText
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/et_address"
-                android:hint="Address"
-                android:textColorHint="@color/colorAccent"
+                android:id="@+id/input_name"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:textColorHint="@color/colorPrimary">
 
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_name"
+                    android:hint="Name"
+                    android:textColorHint="@color/colorAccent"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_phone"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:textColorHint="@color/colorPrimary">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_phone"
+                    android:hint="Phone Number"
+                    android:textColorHint="@color/colorAccent"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_email"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:textColorHint="@color/colorPrimary">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_email"
+                    android:hint="Email Address"
+                    android:textColorHint="@color/colorAccent"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_register_password"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:textColorHint="@color/colorPrimary">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_register_password"
+                    android:hint="Password"
+                    android:textColorHint="@color/colorAccent"
+                    android:inputType="textPassword"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_confirm_passowrd"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:textColorHint="@color/colorPrimary">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_confirm_password"
+                    android:hint="Confirm Password"
+                    android:textColorHint="@color/colorAccent"
+                    android:inputType="textPassword"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:text="@string/lbl_gender"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/colorPrimary"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/rdg_gender"
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:paddingRight="10dp"
+                        android:id="@+id/radio_male"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:id="@+id/radio_female"
+                        />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_address"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:textColorHint="@color/colorPrimary">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_address"
+                    android:hint="Address"
+                    android:textColorHint="@color/colorAccent"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm at my home. "
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/checkbox_home"
+                android:layout_marginLeft="25dp"
                 />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="I'm at my home. "
-            android:layout_below="@id/input_address"
-            android:layout_alignLeft="@id/input_address"
-            android:textColor="@color/colorPrimary"
-            android:id="@+id/checkbox_home"
-            />
 
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btn_register_confirm"
-                android:layout_below="@id/checkbox_home"
                 android:layout_alignParentRight="true"
                 android:text="Register"
                 android:textAllCaps="false"
                 android:background="@color/colorPrimary"
                 android:textColor="@color/white_full"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="260dp"
                 android:layout_marginTop="30dp"
                 android:foreground="@drawable/ripple_white"
-                
+
                 />
 
 
 
-    </RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
 
 
 
